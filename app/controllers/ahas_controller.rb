@@ -45,6 +45,7 @@ class AhasController < ApplicationController
 
     respond_to do |format|
       if @aha.save
+        format.js
         format.html { redirect_to root_url, notice: 'Aha was successfully created.' }
         format.json { render json: @aha, status: :created, location: @aha }
       else
@@ -77,6 +78,7 @@ class AhasController < ApplicationController
     @aha.destroy
 
     respond_to do |format|
+      format.js
       format.html { redirect_to ahas_url }
       format.json { head :no_content }
     end
