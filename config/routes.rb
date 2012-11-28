@@ -1,3 +1,5 @@
 Notebook::Application.routes.draw do
-  root to: 'pages#mockup'
+  resources :ahas
+
+  root to: 'Ahas#index'
 end
