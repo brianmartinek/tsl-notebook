@@ -36,6 +36,11 @@ class AhasController < ApplicationController
   # GET /ahas/1/edit
   def edit
     @aha = Aha.find(params[:id])
+    
+    respond_to do |format|
+      format.html { render 'edit' }
+      format.js { render 'edit' }
+    end  
   end
 
   # POST /ahas

@@ -15,8 +15,12 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $("li").slideDown();
+  $(".aha_li").slideDown();
 });
+
+
+
+
 
 
 

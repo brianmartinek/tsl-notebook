@@ -2,9 +2,6 @@
   <% @ahas.each do |zebra| %>
     <%= render 'aha', :aha_var => zebra %>
   <% end %>
-  <li>
-    <%= form_for @aha, :remote => true do |f| %>
-      <%= f.text_field :note %>
-    <% end %>
-  </li>
+
+  <%= render 'inline_form' %>
 </ul> 
